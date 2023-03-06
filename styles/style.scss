@@ -1,0 +1,166 @@
+$backgroundColor: #F8F4E4;
+$primaryYellow: #F8CE6B;
+$primaryOffGrey: #333333;
+
+
+html{
+    margin:0
+}
+body{
+    margin:0
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+ul{
+    list-style: none;
+}
+
+.mainContainer{
+    background-color: $backgroundColor;
+    min-height: 100vh;
+}
+
+.headerContainer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2%;
+}
+
+.textIntroCotnainer{
+    background-color: $primaryOffGrey;
+    max-width: 55%;
+    color: $primaryYellow;
+    padding:1%;
+}
+
+.featuredProjectsContainer{
+    background-color: $primaryYellow;
+    min-height:100px;
+}
+
+.allProjectsContainer{
+    min-height:100px;
+    padding-bottom: 30px;
+}
+
+.singleProjImage{
+    overflow: hidden;
+    transition: 0.5s;
+    max-width: 100%;
+}
+.singleProjImage:hover{
+    cursor: pointer;
+    transform:scale(1.1);
+}
+
+
+//<ArrowForwardIosIcon onClick={()=>setCurrentProject(currentProject+1)} style={{right:0, position:'absolute', margin:'25px', height:'2em', width:'2em'}}/>
+//<div style={{display:'inline-flex', backgroundColor:'white', padding:'5px', borderRadius:'25px', width:'170px', alignItems:'center', justifyContent:'center'}}>
+
+.checkitoutbutton{
+    display: inline-flex;
+    background-color: white;
+    padding: 5px;
+    border-radius: 25px;
+    width: 170px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+.checkitoutbutton:hover{
+    background-color: $primaryYellow;
+}
+
+.featuredButtons{
+    position: absolute;
+    margin: 25px;
+    height: 2em;
+    width: 2em;
+}
+
+.featuredButtons:hover{
+    cursor: pointer;
+}
+
+.featuredContent{
+    max-width: 40%;
+    font-size: 1.2em;
+}
+
+.projectScreenshot{
+    max-width: 95%;
+    margin: 1%;
+}
+
+.projectAboutContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.projectLinks{
+    color:#333333;
+    transition: 0.3s;
+}
+.projectLinks:hover{
+    text-decoration: underline;
+    color:'black'
+}
+
+.projectGif{
+    height: 800px;
+    width: 100%;
+    background-position: top;
+    box-sizing: border-box;
+    border: 15px solid $primaryYellow;
+    background-repeat: no-repeat;
+    background-color: $primaryOffGrey;
+}
+
+// Extrememly small screens
+@media only screen and (max-width: 300px) {
+    .featuredProjectsContainer{
+        display: none;
+    }
+    .projectGif{
+        display: none;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .projectAboutContainer{
+        max-width: 90%;
+    }
+    .textIntroCotnainer{
+        max-width: 100%;
+    }
+    .headerContainer{
+        flex-wrap: wrap;        
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .projectAboutContainer{
+        max-width: 90%;
+    }
+    .featuredContent{
+        max-width: 100%;
+        font-size: 1em;
+        margin:65px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
