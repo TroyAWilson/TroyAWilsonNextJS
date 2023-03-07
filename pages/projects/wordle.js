@@ -3,7 +3,7 @@ import Project from "./projectTemplate";
 const Wordle = () => {
     const testProjectInfo = {
         title:"Wordle",
-        gif:'wordlegif.gif',
+        gif:['','',''],
         screenshots:['wordle-images', 3],
         about:<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in eros non sem tincidunt elementum vel sit amet quam.</p>,
         skills:['JavaScript','React', 'HTML', 'CSS'],

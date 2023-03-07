@@ -7,26 +7,26 @@ import AllProjs from './components/allProjs'
   [] record different sized gifs for phone / tablet / desktop
   [x] pokeinfo gifs
   [] pokeinfo expand about text
-  [] different third featured project
+  [x] different third featured project
   [] n3 about text
   [] let's watch about text
   [] ww about text
   [] draught serv about
-  [] draught serv screenshots
-  [] draught serv gif(s)
+  [x] draught serv screenshots
+  [x] draught serv gif(s)
   [] swift gif(s)
   [] swift about
-  [] swift screenshots
+  [x] swift screenshots
   [] pentago gif(s)
   [] pentago about
   [] pentago screenshots
   [] fermi gif(s)
   [] fermi about
-  [] fermi screenshots
+  [x] fermi screenshots
   [] firestop about
-  [] eclipse gif(s)
+  [x] eclipse gif(s)
   [] eclipse about
-  [] eclipse screenshots
+  [x] eclipse screenshots
   [] wordle gif(s)
   [] wordle about
   [] wordle screenshots

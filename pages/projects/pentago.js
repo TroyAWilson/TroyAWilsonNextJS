@@ -3,7 +3,7 @@ import Project from "./projectTemplate";
 const Pentago = () => {
     const testProjectInfo = {
         title:"Pentago",
-        gif:'pentagogif.gif',
+        gif:['','',''],
         screenshots:['pentago-images', 8],
         about:<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in eros non sem tincidunt elementum vel sit amet quam.</p>,
         skills:['JavaScript','React','HTML', 'CSS'],
