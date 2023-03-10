@@ -1,7 +1,7 @@
 import Project from "./projectTemplate";
 
 const Worm = () => {
-    const testProjectInfo = {
+    const ProjectInfo = {
         title:"Worm",
         gif:['wormgif.gif','wormgif-tablet.gif','wormgif-mobile.gif'],
         screenshots:['worm-images', 3],
@@ -9,7 +9,7 @@ const Worm = () => {
         skills:['C++','Linux Curses Library'],
         links:{live:null, github:'https://github.com/TroyAWilson/Worm'}
     }
-    return <Project projectInfo={testProjectInfo}/>
+    return <Project projectInfo={ProjectInfo}/>
 }
 
 export default Worm;

@@ -1,7 +1,7 @@
 import Project from "./projectTemplate";
 
 const WheresWallabies = () => {
-    const testProjectInfo = {
+    const ProjectInfo = {
         title:"Where's Wallabies?",
         gif:['wwgif.gif','wwgif.gif','wwgif.gif'],
         screenshots:['ww-images', 4],
@@ -9,7 +9,7 @@ const WheresWallabies = () => {
         skills:['Python', 'NumPy', 'PyTorch', 'TensorFlow', 'Jupyter Notebook'],
         links:{live:null, github:'https://github.com/TroyAWilson/Where-s-Wallabies'}
     }
-    return <Project projectInfo={testProjectInfo}/>
+    return <Project projectInfo={ProjectInfo}/>
 }
 
 export default WheresWallabies;

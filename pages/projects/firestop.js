@@ -1,7 +1,7 @@
 import Project from "./projectTemplate";
 
 const Firestop = () => {
-    const testProjectInfo = {
+    const ProjectInfo = {
         title:"FireStop",
         gif:null,
         screenshots:['firestop-images', 4],
@@ -9,7 +9,7 @@ const Firestop = () => {
         skills:['JavaScript', 'jQuery', 'Express.js', 'HTML', 'CSS', 'API integration'],
         links:{live:null, github:'https://github.com/willm0602/SSU-WICS-Hackathon-Project-Fall-2021', devpost:'https://devpost.com/software/fire-stop'}
     }
-    return <Project projectInfo={testProjectInfo}/>
+    return <Project projectInfo={ProjectInfo}/>
 }
 
 export default Firestop;

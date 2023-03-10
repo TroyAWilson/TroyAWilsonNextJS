@@ -1,7 +1,7 @@
 import Project from "./projectTemplate";
 
 const LetsWatch = () => {
-    const testProjectInfo = {
+    const ProjectInfo = {
         title:"Let's Watch",
         gif:['lwgif.gif','lwgif.gif','lwgif.gif'],
         screenshots:['lw-images', 9],
@@ -9,7 +9,7 @@ const LetsWatch = () => {
         skills:['JavaScript', 'React', 'SQL', 'API Integration', 'HTML', 'CSS', 'Love'],
         links:{live:null, github:'https://github.com/TroyAWilson/letswatch'}
     }
-    return <Project projectInfo={testProjectInfo}/>
+    return <Project projectInfo={ProjectInfo}/>
 }
 
 export default LetsWatch;

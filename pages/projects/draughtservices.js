@@ -1,7 +1,7 @@
 import Project from "./projectTemplate";
 
 const Draught = () => {
-    const testProjectInfo = {
+    const ProjectInfo = {
         title:"Draught Services",
         gif:['dsgif.gif','dsgif-tablet.gif','dsgif-mobile.gif'],
         screenshots:['ds-images', 10],
@@ -9,7 +9,7 @@ const Draught = () => {
         skills:['JavaScript', 'React', 'SQL', 'API Interface', 'HTML', 'CSS'],
         links:{live:null, github:'https://github.com/TroyAWilson/Draught_Services'}
     }
-    return <Project projectInfo={testProjectInfo}/>
+    return <Project projectInfo={ProjectInfo}/>
 }
 
 export default Draught;

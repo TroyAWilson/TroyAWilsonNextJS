@@ -1,7 +1,7 @@
 import Project from "./projectTemplate";
 
 const Pokeinfo = () => {
-    const testProjectInfo = {
+    const ProjectInfo = {
         title:'Pokeinfo',
         gif:['pokeinfogif-desktop.gif', 'pokeinfogif-tablet.gif', 'pokeinfogif-mobile.gif'],
         test:'pokeinfogif-tablet.gif',
@@ -10,7 +10,7 @@ const Pokeinfo = () => {
         skills:['Python','Flask + Jinja', 'JavaScript + jQuery', 'HTML', 'CSS', 'Love'],
         links:{live:'https://pokeinfoapp.herokuapp.com/', github:'https://github.com/TroyAWilson/poke_flask'}
     }
-    return <Project projectInfo={testProjectInfo}/>
+    return <Project projectInfo={ProjectInfo}/>
 }
 
 export default Pokeinfo;

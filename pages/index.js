@@ -14,22 +14,22 @@ import AllProjs from './components/allProjs'
   [] draught serv about
   [x] draught serv screenshots
   [x] draught serv gif(s)
-  [] swift gif(s)
+  [x] swift gif(s)
   [] swift about
   [x] swift screenshots
-  [] pentago gif(s)
+  [x] pentago gif(s)
   [] pentago about
-  [] pentago screenshots
-  [] fermi gif(s)
+  [x] pentago screenshots
+  [x] fermi gif(s)
   [] fermi about
   [x] fermi screenshots
   [] firestop about
   [x] eclipse gif(s)
   [] eclipse about
   [x] eclipse screenshots
-  [] wordle gif(s)
+  [x] wordle gif(s)
   [] wordle about
-  [] wordle screenshots
+  [x] wordle screenshots
   [] update and link new resume
   [x] add to github
   [] deploy to heroku

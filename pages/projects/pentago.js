@@ -1,7 +1,7 @@
 import Project from "./projectTemplate";
 
 const Pentago = () => {
-    const testProjectInfo = {
+    const ProjectInfo = {
         title:"Pentago",
         gif:['pentagogif-desktop.gif','pentagogif-tablet.gif','pentagogif-mobile.gif'],
         screenshots:['pentago-images', 6],
@@ -9,7 +9,7 @@ const Pentago = () => {
         skills:['JavaScript','React','HTML', 'CSS'],
         links:{live:null, github:'https://github.com/TroyAWilson/pentago'}
     }
-    return <Project projectInfo={testProjectInfo}/>
+    return <Project projectInfo={ProjectInfo}/>
 }
 
 export default Pentago;
