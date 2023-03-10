@@ -3,8 +3,8 @@ import Project from "./projectTemplate";
 const Pentago = () => {
     const testProjectInfo = {
         title:"Pentago",
-        gif:['','',''],
-        screenshots:['pentago-images', 8],
+        gif:['pentagogif-desktop.gif','pentagogif-tablet.gif','pentagogif-mobile.gif'],
+        screenshots:['pentago-images', 6],
         about:<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in eros non sem tincidunt elementum vel sit amet quam.</p>,
         skills:['JavaScript','React','HTML', 'CSS'],
         links:{live:null, github:'https://github.com/TroyAWilson/pentago'}
