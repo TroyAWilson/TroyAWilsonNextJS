@@ -63,9 +63,7 @@ const AllProjs = () => {
             title:'Wordle',
             thumbnail:'./wordle-thumb.png',
             page:'wordle',
-        },
-        
-        
+        },    
     ]
 
     return(

@@ -2,8 +2,27 @@ import Hidden from '@mui/material/Hidden';
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
+import Paper from '@mui/material/Paper';
+import { useState, useEffect } from 'react';
+
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+
+import KeyboardArrowRightSharpIcon from '@mui/icons-material/KeyboardArrowRightSharp';
+import KeyboardArrowLeftSharpIcon from '@mui/icons-material/KeyboardArrowLeftSharp';
 
 const Project = ({projectInfo}) => {
+    const [currentImage, setCurrentImage] = useState(0);
+    
+    const changeImage = (value) => {
+        let newProject = currentImage + value;
+        if(newProject > imageList.length -1)
+            newProject = 0;
+        else if (newProject < 0)
+            newProject = imageList.length -1;
+        setCurrentImage(newProject);
+    }
+    
     let imageList = [];
     let directory = projectInfo?.screenshots[0];
     let numberOfImages = projectInfo?.screenshots[1];
@@ -14,7 +33,14 @@ const Project = ({projectInfo}) => {
     return(
         projectInfo ? 
         <div>
-        <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
+        <div className='projectContainer'>
+
+                
+
+
+
+
+
             {/* <Hidden smUp>
                 {projectInfo.gif ? <div className='projectGif' style={{backgroundImage:`url("/${projectInfo?.gif[2]}")`}} /> : null }    
             </Hidden>

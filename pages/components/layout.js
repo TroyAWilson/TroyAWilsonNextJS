@@ -20,7 +20,7 @@ const Layout = ({children}) => {
         
             <div className={['mainContainer', poppins.className].join(" ")}>
                 <Nav/>
-                <main>
+                <main style={{marginBottom:'1%'}}>
                     {children}
                 </main>
             </div>

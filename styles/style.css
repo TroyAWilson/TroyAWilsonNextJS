@@ -4,7 +4,8 @@ $primaryOffGrey: #333333; */
 
 
 html{
-    margin:0
+    margin:0;
+    background-color: #F8F4E4;
 }
 body{
     margin:0
@@ -75,6 +76,10 @@ ul{
     margin: 25px;
     height: 2em;
     width: 2em;
+
+    color:#F8CE6B;
+    border-radius: 50%;
+    background-color: #333333;
 }
 
 .featuredButtons:hover{
@@ -116,6 +121,20 @@ ul{
     background-color: #333333;
 }
 
+/* <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', backgroundColor:'#F8CE6B', maxWidth:'70%', margin:'auto', borderRadius:'25px', border:'3px solid black'}}> */
+
+.projectContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8CE6B;
+    max-width: 70%;
+    margin: auto;
+    border-radius: 25px;
+    border: 3px solid black;
+}
+
 @media only screen and (max-width: 300px) {
     .featuredProjectsContainer{
         display: none;
@@ -140,7 +159,7 @@ ul{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (max-width: 768px) {
-    
+   
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -152,6 +171,9 @@ ul{
         max-width: 100%;
         font-size: 1em;
         margin:65px;
+    }
+    .projectContainer{
+        max-width: 95%;
     }
 }
 
