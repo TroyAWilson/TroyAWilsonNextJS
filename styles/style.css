@@ -1,6 +1,6 @@
-$backgroundColor: #F8F4E4;
+/* $backgroundColor: #F8F4E4;
 $primaryYellow: #F8CE6B;
-$primaryOffGrey: #333333;
+$primaryOffGrey: #333333; */
 
 
 html{
@@ -18,7 +18,7 @@ ul{
 }
 
 .mainContainer{
-    background-color: $backgroundColor;
+    background-color: #F8F4E4;
     min-height: 100vh;
 }
 
@@ -30,14 +30,14 @@ ul{
 }
 
 .textIntroCotnainer{
-    background-color: $primaryOffGrey;
+    background-color: #333333;
     max-width: 55%;
-    color: $primaryYellow;
+    color: #F8CE6B;
     padding:1%;
 }
 
 .featuredProjectsContainer{
-    background-color: $primaryYellow;
+    background-color: #F8CE6B;
     min-height:100px;
 }
 
@@ -56,10 +56,6 @@ ul{
     transform:scale(1.1);
 }
 
-
-//<ArrowForwardIosIcon onClick={()=>setCurrentProject(currentProject+1)} style={{right:0, position:'absolute', margin:'25px', height:'2em', width:'2em'}}/>
-//<div style={{display:'inline-flex', backgroundColor:'white', padding:'5px', borderRadius:'25px', width:'170px', alignItems:'center', justifyContent:'center'}}>
-
 .checkitoutbutton{
     display: inline-flex;
     background-color: white;
@@ -71,7 +67,7 @@ ul{
     transition: 0.4s;
 }
 .checkitoutbutton:hover{
-    background-color: $primaryYellow;
+    background-color: #F8CE6B;
 }
 
 .featuredButtons{
@@ -115,12 +111,11 @@ ul{
     width: 100%;
     background-position: top;
     box-sizing: border-box;
-    border: 15px solid $primaryYellow;
+    border: 15px solid #F8CE6B;
     background-repeat: no-repeat;
-    background-color: $primaryOffGrey;
+    background-color: #333333;
 }
 
-// Extrememly small screens
 @media only screen and (max-width: 300px) {
     .featuredProjectsContainer{
         display: none;
