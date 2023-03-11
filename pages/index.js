@@ -34,11 +34,18 @@ import AllProjs from './components/allProjs'
   [x] add to github
   [] deploy to heroku
 */
+import Head from 'next/head'
 
 export default function Home() {
 
   return (
     <>
+        <Head>
+            <title>Troy A Wilson</title>
+            <meta name="description" content="Portfolio website" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="icon" href="./favicon.ico" />
+        </Head>
         <div className='textIntroCotnainer'>
           <h2>Greetings Travelers!</h2>
           <p style={{marginLeft:'15px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in eros non sem tincidunt elementum vel sit amet quam. Sed sed purus sed lectus gravida pharetra. Fusce quis mi malesuada, sagittis tortor ut, accumsan felis. Proin iaculis magna ac bibendum tempus.</p>
