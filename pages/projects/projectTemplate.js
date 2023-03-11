@@ -11,7 +11,7 @@ const Project = ({projectInfo}) => {
     return(
         projectInfo ? 
         <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
-            <Hidden smUp>
+            {/* <Hidden smUp>
                 {projectInfo.gif ? <div className='projectGif' style={{backgroundImage:`url("/${projectInfo?.gif[2]}")`}} /> : null }    
             </Hidden>
             <Hidden mdUp smDown>
@@ -19,7 +19,7 @@ const Project = ({projectInfo}) => {
             </Hidden>
             <Hidden mdDown>
                 {projectInfo.gif ? <div className='projectGif' style={{backgroundImage:`url("/${projectInfo?.gif[0]}")`}} /> : null }    
-            </Hidden>
+            </Hidden> */}
             <h1 style={{textDecoration:'underline'}}>{projectInfo.title}</h1>
             <div className='projectAboutContainer'>
                 <div>
