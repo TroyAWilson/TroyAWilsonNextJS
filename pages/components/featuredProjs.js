@@ -22,7 +22,8 @@ const FeaturedProjs = () => {
     }
 
     //Gifs at around 480x200 pixels look the best, follow something within these dimensions when creating gifs
-    //Currently recording the gifs in 1895x800, 815x775, 400x800 using screentogif
+    //Currently recording the gifs in 1895x800, 815x800, 400x800 using screentogif
+    //curret task is to try and reduce the gif sizes to salvage the gif idea, ~120 frames per gif
     const featuredProjsList = [
         {
             title:'PokéInfo',
