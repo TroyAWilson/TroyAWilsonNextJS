@@ -15,6 +15,7 @@ const Layout = ({children}) => {
                 <title>Troy A Wilson</title>
                 <meta name="description" content="Portfolio website" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta content="width=device-width, initial-scale=1" name="viewport" />
                 <link rel="icon" href="./favicon.ico" />
             </Head>
         

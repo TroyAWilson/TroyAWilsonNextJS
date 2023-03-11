@@ -1,4 +1,7 @@
 import Hidden from '@mui/material/Hidden';
+import React from 'react';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
 
 const Project = ({projectInfo}) => {
     let imageList = [];
@@ -6,10 +9,11 @@ const Project = ({projectInfo}) => {
     let numberOfImages = projectInfo?.screenshots[1];
     
     for(let i = 0; i < numberOfImages; i++)
-        imageList.push(`image${i}`);
+        imageList.push(`/${directory}/image${i}.png`);
 
     return(
         projectInfo ? 
+        <div>
         <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
             {/* <Hidden smUp>
                 {projectInfo.gif ? <div className='projectGif' style={{backgroundImage:`url("/${projectInfo?.gif[2]}")`}} /> : null }    
@@ -47,9 +51,10 @@ const Project = ({projectInfo}) => {
             <div style={{display:'flex', flexDirection:'column',alignItems:'center'}}>
                 <h2>Screenshots</h2>
                 <div style={{display:'flex', flexWrap:'wrap', justifyContent:'center', alignItems:'center'}}>
-                    {imageList?.map((image,index) => <img className='projectScreenshot' key={index} src={`/${directory}/${image}.png`} />)}
+                    {imageList?.map((image,index) => <img className='projectScreenshot' key={index} src={`${image}`} />)}
                 </div>
             </div>
+        </div>
         </div>
         :
         <>loading</>
