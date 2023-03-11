@@ -5,7 +5,7 @@ const Swift = () => {
         title:"Neil Gehrels Swift Observatory",
         gif:['swiftgif-desktop.gif','swiftgif-tablet.gif','swiftgif-mobile.gif'],
         screenshots:['swift-images', 7],
-        about:<p>Let’s Watch is an application to organize and enhance the experience of watching TV shows and films with friends.</p>,
+        about:<p>Neil Gehrels Swift Observatory mission Education and Public Outreach (E/PO) page emphasises the goal to use the observations and scientific discoveries of the Swift mission to improve the understanding and utilization of science and mathematics concepts for grades 7-12.</p>,
         skills:['JavaScript','GatsbyJS','HTML', 'CSS'],
         links:{live:'https://swift.sonoma.edu/', github:null}
     }

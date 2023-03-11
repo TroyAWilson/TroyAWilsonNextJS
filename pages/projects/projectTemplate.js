@@ -2,22 +2,23 @@ import Hidden from '@mui/material/Hidden';
 
 const Project = ({projectInfo}) => {
     let imageList = [];
-    let directory = projectInfo.screenshots[0];
-    let numberOfImages = projectInfo.screenshots[1];
+    let directory = projectInfo?.screenshots[0];
+    let numberOfImages = projectInfo?.screenshots[1];
     
     for(let i = 0; i < numberOfImages; i++)
         imageList.push(`image${i}`);
 
     return(
+        projectInfo ? 
         <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
             <Hidden smUp>
-                {projectInfo.gif ? <div className='projectGif' style={{backgroundImage:`url("/${projectInfo.gif[2]}")`}} /> : null }    
+                {projectInfo.gif ? <div className='projectGif' style={{backgroundImage:`url("/${projectInfo?.gif[2]}")`}} /> : null }    
             </Hidden>
             <Hidden mdUp smDown>
-                {projectInfo.gif ? <div className='projectGif' style={{backgroundImage:`url("/${projectInfo.gif[1]}")`}} /> : null }    
+                {projectInfo.gif ? <div className='projectGif' style={{backgroundImage:`url("/${projectInfo?.gif[1]}")`}} /> : null }    
             </Hidden>
             <Hidden mdDown>
-                {projectInfo.gif ? <div className='projectGif' style={{backgroundImage:`url("/${projectInfo.gif[0]}")`}} /> : null }    
+                {projectInfo.gif ? <div className='projectGif' style={{backgroundImage:`url("/${projectInfo?.gif[0]}")`}} /> : null }    
             </Hidden>
             <h1 style={{textDecoration:'underline'}}>{projectInfo.title}</h1>
             <div className='projectAboutContainer'>
@@ -27,7 +28,7 @@ const Project = ({projectInfo}) => {
                 </div>
                 <div style={{display:'flex', flexDirection:'column'}}>
                     <div>
-                        <h3>What's it made with?</h3>
+                        <h3>What&apos;s it made with?</h3>
                         <ul>
                             {projectInfo.skills.map((skill,index) => <li key={index}>{skill}</li>)}
                         </ul>
@@ -50,6 +51,8 @@ const Project = ({projectInfo}) => {
                 </div>
             </div>
         </div>
+        :
+        <>loading</>
     )
 }
 

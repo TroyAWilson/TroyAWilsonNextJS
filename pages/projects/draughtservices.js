@@ -5,7 +5,7 @@ const Draught = () => {
         title:"Draught Services",
         gif:['dsgif.gif','dsgif-tablet.gif','dsgif-mobile.gif'],
         screenshots:['ds-images', 10],
-        about:<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in eros non sem tincidunt elementum vel sit amet quam.</p>,
+        about:<p>Draught Services is a class project that emphasises the relationship between frontend and backend development as well as the API&apos;s that connect them.</p>,
         skills:['JavaScript', 'React', 'SQL', 'API Interface', 'HTML', 'CSS'],
         links:{live:null, github:'https://github.com/TroyAWilson/Draught_Services'}
     }
