@@ -40,7 +40,7 @@ export default function Home() {
     <>
         <div className='textIntroCotnainer'>
           <h2>Greetings Travelers!</h2>
-          <p style={{marginLeft:'15px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in eros non sem tincidunt elementum vel sit amet quam. Sed sed purus sed lectus gravida pharetra. Fusce quis mi malesuada, sagittis tortor ut, accumsan felis. Proin iaculis magna ac bibendum tempus.</p>
+          <p style={{marginLeft:'15px'}}>Thanks for stopping by! I'm currently working at Sonoma State University's EdEon STEM program. Feel free to check out the projects anyway, they're pretty cool.</p>
         </div>
         
         <div className='featuredProjectsContainer'>
